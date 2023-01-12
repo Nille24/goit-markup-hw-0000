@@ -83,7 +83,7 @@ body {
 }
 
 .menu-link:hover::after,
-.menu-link:focus::after,{
+.menu-link:focus::after{
   transform: scaleX(1);
 }
 
