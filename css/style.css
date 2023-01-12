@@ -64,6 +64,27 @@ body {
 
 .menu-link {
   display: block;
+  position: relative;
+}
+
+.menu-link::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color:var(--button-color) ;
+  border-radius: 2px;
+  left: 0;
+  bottom: 0;
+  margin-bottom: -24px;
+  transform: scaleX(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.menu-link:hover::after,
+.menu-link:focus::after,{
+  transform: scaleX(1);
 }
 
 .page-header-container {
@@ -109,6 +130,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
+
+
 
 /*========Contact============*/
 
@@ -322,7 +345,7 @@ body {
 
 .link-items:hover,
 .app-items:focus{
-  background-color: #404bbf;
+  background-color:var(--button-color);
 }
 
 .soc {
@@ -609,6 +632,38 @@ body {
   outline: #404bbf;
 }
 
+.thumb{
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay{
+  transform: translate(0,100%);
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(77, 90, 229);
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color:var(--logo-color) ;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+ 
+}
+
+.app-link:hover .overlay,
+.app-link:focus .overlay {
+  transform: translate(0, 0);
+}
+
+
+
+
 .second-hero {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -648,3 +703,48 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: ;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal{
+  position: absolute;
+  width: 408px;
+  height: 576px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);;
+  width:24px;
+  height: 24px;
+  cursor: pointer;
+  background-color: #E7E9FC;
+  padding: 0;
+  top: 24px;
+  right: 24px;
+}
+
