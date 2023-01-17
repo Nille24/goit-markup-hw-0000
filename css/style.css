@@ -707,7 +707,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--white-color);
   margin-bottom: 16px;
-  margin-right: 102px;
+ 
 }
 
 .footer-soc-list {
@@ -723,7 +723,7 @@ body {
 .footer-subscribe{
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: 24px;
 }
 
 .soc-link:focus,
@@ -792,6 +792,10 @@ body {
   color: var(--brand-color);
   font-size: 18px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label-form-field:nth-child(n + 2){
+  margin-top: 8px;
 }
 
 .input-modal:focus{
