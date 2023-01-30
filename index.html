@@ -36,24 +36,92 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="menu-mobile-open js-open-menu" >
+          <svg class="mobile-menu-open_icon" width="32" height="22">
+            <use href="./images/symbol-defs.svg#burger-icon"></use>
+          </svg>
+        </button>
         <ul class="contact list">
-          <li class="contact-item">
+          <li class="contact-item-mail">
             <a class="contact-mail link" href="mailto">info@devstudio.com</a>
           </li>
           <li class="contact-item">
             <a class="contact-phone-number link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
+              >+11 (000) 111-11-11</a>
+           
           </li>
         </ul>
       </div>
+      <div class="menu-mobile js-menu-container" >
+        <div class="mobile-menu-container">
+        <button class="mobile-menu-close-button js-close-menu" >
+          <svg class="mobile-menu_close-icon" width="12" height="12">
+            <use href="./images/symbol-defs.svg#icon-close-mob-menu"></use>
+          </svg>
+        </button>
+
+        <ul class="menu-mobile-modal list">
+          <li class="item-mobile-modal">
+            <a class="mobile link current " href="./index.html">Studio</a>
+          </li>
+          <li class="item-mobile-modal">
+            <a class="mobile link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="item-mobile-modal">
+            <a class="mobile link" href="">Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="contact-mobile list">
+          <li class="contact-mobile-item">
+            <a class="contact-mobile-phone link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="contact-mobile-item">
+            <a class="contact-mobile-mail link" href="mailto">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="soc-mobile list">
+          <li class="mobile-soc-item">
+            <a class="mobile-soc link" href="">
+              <svg class="mobile-soc-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-soc-item">
+            <a class="mobile-soc link" href="">
+              <svg class="mobile-soc-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-soc-item">
+            <a class="mobile-soc link" href="">
+              <svg class="mobile-soc-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-soc-item">
+            <a class="mobile-soc link" href="">
+              <svg class="mobile-soc-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
     </header>
     <main>
+      
       <section class="hero">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button class="model-btn" type="button" data-modal-open>Order Service</button>
       </section>
-
+  
+      
       <section class="skills-section section">
         <div class="container">
           <h2 class="visually-hidden">skills</h2>
@@ -89,12 +157,15 @@
           </ul>
         </div>
       </section>
+      
+      
       <section class="examples-section section-top">
         <div class="container">
           <h2 class="examples">What are we doing</h2>
           <ul class="examples-list list">
             <li class="list-items">
               <img
+                srcset="./images/p1@2x.jpg 2x"
                 src="./images/p1.jpg"
                 alt="computer"
                 width="360"
@@ -103,6 +174,7 @@
             </li>
             <li class="list-items">
               <img
+                srcset="./images/p2@2x.jpg 2x"
                 src="./images/p2.jpg"
                 alt="phone screen"
                 width="360"
@@ -111,6 +183,7 @@
             </li>
             <li class="list-items">
               <img
+                srcset="./images/p3@2x.jpg 2x"
                 src="./images/p3.jpg"
                 alt="phone in head"
                 width="360"
@@ -121,12 +194,14 @@
         </div>
       </section>
 
+
       <section class="team-group section">
         <div class="container">
           <h2 class="team">Our team</h2>
           <ul class="list examples-list">
             <li class="team-item">
               <img
+                srcset="./images/ph1@2x.jpg 2x"
                 src="./images/ph1.jpg"
                 alt="photo Marka"
                 width="264"
@@ -178,6 +253,7 @@
 
             <li class="team-item">
               <img
+                srcset="./images/ph2@2x.jpg 2x"
                 src="./images/ph2.jpg"
                 alt="Tom`s photo"
                 width="264"
@@ -227,6 +303,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/ph3@2x.jpg 2x"
                 src="./images/ph3.jpg"
                 alt="Camila photo"
                 width="264"
@@ -277,6 +354,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/ph4@2x.jpg 2x"
                 src="./images/ph4.jpg"
                 alt="Damiel`s photo"
                 width="264"
@@ -328,7 +406,7 @@
           </ul>
         </div>
       </section>
-
+  
       <section class="customers-section section">
         <div class="customers container">
           <h2 class="customers-title">Customers</h2>
@@ -379,10 +457,12 @@
           </ul>
         </div>
       </section>
+
     </main>
-    <footer class="footer">
+      
+    <footer class="footer section">
       <div class="footer-container container">
-        <div>
+        <div class="logo-container">
           <a class="logo-grey link" href="./index.html">
             <span class="web">Web</span>Studio</a
           >
@@ -435,6 +515,8 @@
       </div>
       </div>
     </footer>
+    
+    
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
@@ -503,5 +585,6 @@
   
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

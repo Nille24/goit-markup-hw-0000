@@ -36,18 +36,83 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="menu-mobile-open js-open-menu" >
+          <svg class="mobile-menu-open_icon" width="32" height="22">
+            <use href="./images/symbol-defs.svg#burger-icon"></use>
+          </svg>
+        </button>
         <ul class="contact list">
-          <li class="contact-item">
+          <li class="contact-item-mail">
             <a class="contact-mail link" href="mailto">info@devstudio.com</a>
           </li>
           <li class="contact-item">
             <a class="contact-phone-number link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
+              >+11 (000) 111-11-11</a>
+           
           </li>
         </ul>
-      </div>
-    </header>
+        <div class="menu-mobile js-menu-container" >
+          <div class="mobile-menu-container">
+          <button class="mobile-menu-close-button js-close-menu" >
+            <svg class="mobile-menu_close-icon" width="12" height="12">
+              <use href="./images/symbol-defs.svg#icon-close-mob-menu"></use>
+            </svg>
+          </button>
+  
+          <ul class="menu-mobile-modal list">
+            <li class="item-mobile-modal">
+              <a class="mobile link" href="./index.html">Studio</a>
+            </li>
+            <li class="item-mobile-modal">
+              <a class="mobile link current" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="item-mobile-modal">
+              <a class="mobile link" href="">Contacts</a>
+            </li>
+          </ul>
+  
+          <ul class="contact-mobile list">
+            <li class="contact-mobile-item">
+              <a class="contact-mobile-phone link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="contact-mobile-item">
+              <a class="contact-mobile-mail link" href="mailto">info@devstudio.com</a>
+            </li>
+          </ul>
+  
+          <ul class="soc-mobile list">
+            <li class="mobile-soc-item">
+              <a class="mobile-soc link" href="">
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a class="mobile-soc link" href="">
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a class="mobile-soc link" href="">
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a class="mobile-soc link" href="">
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </header>
     <main>
       <section class="second-hero">
         <div class="container">
@@ -76,6 +141,7 @@
                 <article class="card-set">
                   <div class="thumb">
                     <img
+                      srcset="./images/bankapp@2x 2x.jpg"
                       class="app-photo"
                       src="./images/bankapp.jpg"
                       alt="banking app"
@@ -96,6 +162,7 @@
                 <article class="card-set">
                   <div class="thumb">
                     <img
+                      srcset="./images/cashless@2x.jpg 2x"
                       class="app-photo"
                       src="./images/cashless.jpg"
                       alt="online payment"
@@ -116,6 +183,7 @@
                 <article class="card-set">
                   <div class="thumb">
                     <img
+                      srcset="./images/meditation@2x.jpg 2x"
                       class="app-photo"
                       src="./images/meditation.jpg"
                       alt="laptop and phone"
@@ -136,6 +204,7 @@
                 <article class="card-set">
                   <div class="thumb">
                     <img
+                      srcset="./images/taxi@2x.jpg 2x"
                       class="app-photo"
                       src="./images/taxi.jpg"
                       alt="hands on the steering wheel"
@@ -156,6 +225,7 @@
                 <article class="card-set">
                   <div class="thumb">
                     <img
+                      srcset="./images/screenil@2x.jpg 2x"
                       class="app-photo"
                       src="./images/screenil.jpg"
                       alt="phone screen"
@@ -176,6 +246,7 @@
                 <article class="card-set">
                   <div class="thumb">
                     <img
+                      srcset="./images/onlinecourse@2x.jpg 2x"
                       class="app-photo"
                       src="./images/onlinecourse.jpg"
                       alt="girl with a phone in her hands"
@@ -196,6 +267,7 @@
                 <article class="card-set">
                   <div class="thumb">
                     <img
+                      srcset="./images/inststory@2x.jpg 2x"
                       class="app-photo"
                       src="./images/inststory.jpg"
                       alt="exemple instagram story"
@@ -216,6 +288,7 @@
                 <article class="card-set">
                   <div class="thumb">
                     <img
+                      srcset="./images/organicfood@2x.jpg 2x"
                       class="app-photo"
                       src="./images/organicfood.jpg"
                       alt="vegetables in a bag"
@@ -236,6 +309,7 @@
                 <article class="card-set">
                   <div class="thumb">
                     <img
+                      srcset="./images/freshcoffe@2x.jpg 2x"
                       class="app-photo"
                       src="./images/freshcoffe.jpg"
                       alt="cup coffee"
@@ -255,9 +329,9 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer section">
       <div class="footer-container container">
-        <div>
+        <div class="logo-container">
           <a class="logo-grey link" href="./index.html">
             <span class="web">Web</span>Studio</a
           >
@@ -310,5 +384,6 @@
       </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
